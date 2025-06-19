@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Presentación Personal</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #283593, #1a237e);
+      color: #f0f0f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e88e5, #3949ab);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #1a237e;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav button {
+      background-color: #3949ab;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #5c6bc0;
+      transform: translateY(-2px);
+    }
+
+    section {
+      display: none;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 25px;
+      background-color: #ffffff;
+      color: #333;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #fafafa;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card p {
+      padding: 15px;
+      font-weight: 500;
+      color: #222;
+    }
+
+    footer {
+      background-color: #1a237e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .presentacion-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .presentacion-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .presentacion-text h2 {
+      color: #1a237e;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .presentacion-text ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .presentacion-img {
+      flex: 0 0 300px;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 3px solid #3949ab;
+      background-color: #eee;
+    }
+
+    .presentacion-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Miguel Jesus Manchay</h1>
+  <p>22 años • Estudiante de Diseño Gráfico en la Universidad César Vallejo</p>
+</header>
+
+<nav>
+  <button onclick="mostrarSeccion('presentacion')">Inicio</button>
+  <button onclick="mostrarSeccion('dibujo')">🎨 Dibujo</button>
+  <button onclick="mostrarSeccion('musica')">🎵 Música</button>
+  <button onclick="mostrarSeccion('series')">📺 Series</button>
+</nav>
+
+<section id="presentacion" style="display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  
+  <div style="flex: 1; padding-right: 20px;">
+    <h2>Bienvenido</h2>
+    <p>¡Hola! Soy un apasionado del arte y la creatividad. En esta página puedes conocer más sobre mis gustos y aficiones.</p>
+    <ul>
+      <li>Tengo 22 años de edad</li>
+      <li>Cumplo años el 20 de Mayo</li>
+      <li>Me gusta dibujar y pintar en mis ratos libres</li>
+      <li>Estoy en septimo ciclo</li>
+      <li>Tengo 4 perros de mascotas y 2 gatos</li>
+    </ul>
+  </div>
+  
+  <div style="flex: 0 0 300px; height: 300px; border: 2px solid #ccc; border-radius: 8px; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color: #eee;">
+    <img src="/recursos/Captura de pantalla 2024-09-14 015316.png" alt="Mi foto o arte" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+
+</section>
+
+<section id="dibujo">
+  <h2>🎨 Dibujo</h2>
+  <p>El dibujo es una de mis mayores pasiones. Aquí te comparto algunos recursos y ejemplos de mi trabajo:</p>
+  
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  ">
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/fbvzdms.png" alt="Recurso de dibujo 1"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/gadian 2 art.png" alt="Recurso de dibujo 2"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/gatogato.png" alt="Recurso de dibujo 3"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/goz.png" alt="Recurso de dibujo 4"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/mecha3.png" alt="Recurso de dibujo 5"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/triso.png" alt="Recurso de dibujo 6"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/waos.png" alt="Recurso de dibujo 7"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="/recursos/zero sombrare.png" alt="Recurso de dibujo 8"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+  </div>
+</section>
+
+<section id="musica">
+  <h2>🎵 Música</h2>
+  <p>Me encanta la música como forma de expresión y como fuente de inspiración. Escucho una gran variedad de géneros, desde rock alternativo hasta música instrumental, que suelo utilizar mientras trabajo en mis diseños o dibujo.</p>
+  
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  ">
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://cdn-images.dzcdn.net/images/cover/a180e93078f8124fb27006d491d4f85f/0x1900-000000-80-0-0.jpg" alt="Recurso de musica 1"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://somoskudasai.com/wp-content/uploads/2021/04/portada_ali.jpg" alt="Recurso de musica 2"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://cdn-p.smehost.net/sites/d640702c453541ec821739264be49a1a/wp-content/uploads/2023/11/Melendi-20-anos-sin-noticias-portada.jpg" alt="Recurso de musica 3"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+
+    <div style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://i.scdn.co/image/ab6761610000e5eb1bb85fb4349fd61b46151fb4" alt="Recurso de musica 4"
+           onclick="abrirLightbox(this.src)"
+           style="cursor: pointer; width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+  </div>
+</section>
+
+<section id="series">
+  <h2>📺 Series Favoritas</h2>
+  <p>Estos son mis gusto en series, principalmente me gustan serias de <strong> Distopia </strong>. Aquí comparto algunas imágenes relacionadas</p>
+  
+  <div class="grid-cards">
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/M/MV5BNjJjNTM3YjgtMDMyNy00ZWMzLTk4NWYtNDgzNDc0YjVjZTE1XkEyXkFqcGc@._V1_.jpg" alt="Serie 1" onclick="abrirLightbox(this.src)">
+      <p>Warhammer 40K: The Tithes - Temporada 1</p>
+    </div>
+
+    <div class="card">
+      <img src="https://salaocho.com/wp-content/uploads/2023/06/love-death-robots-poster.jpg" alt="Serie 2" onclick="abrirLightbox(this.src)">
+      <p>Love, Death & Robots</p>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Serie 3" onclick="abrirLightbox(this.src)">
+      <p>Breaking Bad</p>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/adbb57d9949065f339e6fcf500c61d73f18d1c7b147bdfe5e3f7be07afb4cfdb.jpg" alt="Serie 4" onclick="abrirLightbox(this.src)">
+      <p>Decálogo Kieslowski</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.cdn1.buscalibre.com/fit-in/520x520/ca/3d/804c50ba5e9efe3334a5fe48714eb122.jpg" alt="Serie 5" onclick="abrirLightbox(this.src)">
+      <p>Trigun</p>
+    </div>
+
+    <div class="card">
+      <img src="https://imagenes.atresplayer.com/atp/clipping/cmsimages01/2023/06/23/BEE39765-796A-44BA-9245-A3F7A78F1C1B/1280x720.jpg" alt="Serie 5" onclick="abrirLightbox(this.src)">
+      <p>the big bang theory</p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+PRESENTACION
+</footer>
+
+<script>
+  function mostrarSeccion(id) {
+    // Oculta todas las secciones
+    var secciones = document.querySelectorAll('section');
+    secciones.forEach(function(sec) {
+      sec.style.display = 'none';
+    });
+
+    // Muestra la sección seleccionada
+    document.getElementById(id).style.display = 'block';
+  }
+  
+</script>
+<!-- Lightbox Modal -->
+<div id="lightbox" style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius: 8px; box-shadow: 0 0 20px #fff;">
+</div>
+
+<script>
+  // Abrir lightbox
+  function abrirLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+
+  // Cerrar lightbox
+  document.getElementById('lightbox').onclick = function() {
+    this.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
